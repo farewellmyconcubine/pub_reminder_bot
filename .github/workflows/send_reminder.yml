@@ -1,8 +1,9 @@
 name: Monthly Reminder
 
 on:
+  workflow_dispatch: # Добавляем возможность ручного запуска
   schedule:
-    - cron: "0 9 1 * *" # Запуск первого числа каждого месяца в 09:00 UTC
+    - cron: "0 9 1 * *" # Запуск в 09:00 первого числа каждого месяца (UTC)
 
 jobs:
   send_reminder:
