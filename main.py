@@ -29,4 +29,4 @@ register_reg_visit(bot)
 # Запуск бота
 if __name__ == "__main__":
     print("Бот запущен...")
-    bot.polling()
+    bot.polling(non_stop=True, timeout=100)
